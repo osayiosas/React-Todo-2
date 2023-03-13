@@ -28,8 +28,10 @@ export const Todo = (props) =>
           Delete
         </button>
       </div>
-      {showModal && <Modal />}
-      {showModal && <Backdrop onCancel={closeHandler} />}
+      {showModal && (
+        <Modal onCancel={closeHandler} onConfirm={closeHandler} />
+      )}
+      {showModal && <Backdrop onClick={closeHandler} />}
     </div>
   );
 }
