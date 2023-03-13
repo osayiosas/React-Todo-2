@@ -1,14 +1,15 @@
-
+import Todo from './components/Todo'
 
 function App() {
   return (
-    <div >
+    <div>
       <h1>My Todo</h1>
-      <div>
-        
-      </div>
+      <Todo text='learn react'/>
+      <Todo text='master react' />
+      <Todo text='explore the full react course' />
     </div>
   );
+  
 }
 
 export default App;
